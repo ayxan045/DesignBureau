@@ -1,0 +1,14 @@
+@import './base/utilities';
+@import './base/variables';
+@import './base/reset';
+@import '../../components/Header/header';
+@import '../../pages/Home/home';
+@import '../../pages/Services/services';
+@import '../../pages/About/about';
+@import '../../pages/News/news';
+@import '../../pages/NewsDetails/news-details';
+@import '../../pages/Project/project';
+@import '../../pages/Contact/contact';
+@import '../../components/ScrollToTopBtn/scroll-to-top-btn';
+@import '../../components/BackBtn/back-btn';
+@import '../../pages/NotFound/not-found'

@@ -1,0 +1,15 @@
+.news-details{
+    .news-details__description{
+        h5{
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+    .news-details__box{
+        .news-details__about{
+            line-height: 24px;
+            opacity: 1;
+            overflow: hidden;
+        }
+    }
+}

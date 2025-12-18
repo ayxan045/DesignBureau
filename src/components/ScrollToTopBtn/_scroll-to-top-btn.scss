@@ -1,0 +1,51 @@
+.scroll-progress {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .arrow-icon {
+    color: #888;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .progress-ring {
+    position: absolute;
+    transform: rotate(-90deg);
+  }
+
+  .progress-ring__background {
+    fill: none;
+    stroke-width: 1;
+  }
+
+  .progress-ring__circle {
+    fill: none;
+    stroke: #888;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-dasharray: 151;
+    stroke-dashoffset: 151;
+    transition: stroke-dashoffset 0.25s linear;
+  }
+
+  &:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+}

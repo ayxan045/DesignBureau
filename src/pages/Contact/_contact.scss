@@ -1,0 +1,28 @@
+.contact {
+    .contact-img {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .contact-title {
+            position: absolute;
+            bottom: 20px;
+            color: #fff;
+            font-size: 48px;
+            z-index: 2;
+        }
+    }
+
+    .contact-boxes{
+        border-top: 1px solid #ccc;
+        color: #888;
+    }
+}

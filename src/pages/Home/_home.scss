@@ -1,0 +1,112 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+        transition: background-color 0.4s ease;
+    }
+
+    // >* {
+    //     position: relative;
+    //     z-index: 20;
+    //     transition: .4s ease;
+    // }
+
+    // &.dark-bg::after {
+    //     background-color: rgb(54, 51, 51);
+    //     z-index: 20;
+    // }
+
+    .home-img {
+        position: absolute;
+    }
+
+    .home-content {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        z-index: 3;
+        width: 50%;
+
+        .home-title {
+            font-size: 64px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .projects-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            color: #fff;
+            background-color: transparent;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    .projects-group {
+        position: absolute;
+        bottom: 40px;
+        z-index: 3;
+        width: 88%;
+
+        .projects-item {
+            font-size: 14px;
+
+            a {
+                display: inline-block;
+                width: 90%;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                text-align: left;
+                position: relative;
+                transition: .3s ease-in-out;
+                font-size: 20px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #888;
+                    transition: .3s ease-in-out;
+                    z-index: 1;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    transition: .3s ease-in-out;
+                    background-color: #fff;
+                    width: 0;
+                    height: 2px;
+                    z-index: 2;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+}
