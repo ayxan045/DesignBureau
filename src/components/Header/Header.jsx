@@ -85,16 +85,6 @@ function Header({ isBlack }) {
       <header className={`header ${isBlack ? "header-black" : ""}`}>
         <div className="container">
           <div className="d-flex justify-between align-center">
-            {/* <div className="navbar w-45 d-flex justify-between align-center">
-              <ul className="d-flex align-center text-uppercase">
-                <li className="mr-6">
-                  <Link to="/project">projects</Link>
-                </li>
-                <li>
-                  <Link to="/contact">contact</Link>
-                </li>
-              </ul>
-            </div> */}
             <div>
               <h1 className="logo">
                 <Link to="/">
